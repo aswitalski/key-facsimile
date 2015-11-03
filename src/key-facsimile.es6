@@ -1,5 +1,3 @@
-
-
 var keyFacsimile = function(keys, converter, params) {
 	var result = {};
 	Object.keys(keys).forEach(function(key) {

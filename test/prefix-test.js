@@ -1,6 +1,6 @@
 const assert = require('assert');
 
-const keyPrefix = require('../src/key-facsimile').prefix('prefix:');
+const keyPrefix = require('../lib/key-facsimile').prefix('prefix:');
 
 describe('Key Prefix =>', () => {
 

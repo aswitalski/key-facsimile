@@ -4,9 +4,11 @@
   "description": "A key-value mirror supporting prefixing, uppercase with underscore and lowercase with dash name convension.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "generate": "babel src -d lib && git add ./lib/"
   },
   "pre-commit": [
+    "generate",
     "test"
   ],
   "repository": {
@@ -18,12 +20,9 @@
     "mirror",
     "facsimile",
     "uppercase",
-    "capitalize",
-    "capitalized",
-    "lowercase",
-    "underscore",
     "dash",
-    "notation"
+    "lowercase",
+    "underscore"
   ],
   "author": "Aleksander Świtalski",
   "license": "MIT",

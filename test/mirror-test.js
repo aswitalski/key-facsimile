@@ -1,6 +1,6 @@
 const assert = require('assert');
 
-const keyMirror = require('../src/key-facsimile');
+const keyMirror = require('../lib/key-facsimile');
 
 describe('Key Mirror', () => {
 

@@ -1,6 +1,6 @@
 const assert = require('assert');
 
-const keyUppercase = require('../src/key-facsimile').uppercase;
+const keyUppercase = require('../lib/key-facsimile').uppercase;
 
 describe('Key Uppercase =>', () => {
 
