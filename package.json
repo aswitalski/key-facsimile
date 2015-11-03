@@ -1,6 +1,6 @@
 {
   "name": "key-facsimile",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A key-value mirror supporting prefixing, uppercase with underscore and lowercase with dash name convension.",
   "main": "index.js",
   "scripts": {
