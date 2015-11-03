@@ -19,5 +19,9 @@
     "notation"
   ],
   "author": "Aleksander Świtalski",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "assert": "^1.3.0",
+    "mocha": "^2.3.3"
+  }
 }
