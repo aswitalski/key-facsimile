@@ -4,11 +4,13 @@
   "description": "A key-value mirror supporting prefixing, uppercase with underscore and lowercase with dash name convension.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
-    "generate": "babel src -d lib && git add ./lib/"
+    "test": "npm run generate && mocha",
+    "generate": "babel src -d lib",
+    "add-to-index": "git add ./lib/"
   },
   "pre-commit": [
     "generate",
+    "add-to-index",
     "test"
   ],
   "repository": {
