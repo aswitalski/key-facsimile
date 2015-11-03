@@ -1,4 +1,4 @@
-var keyFacsimile = (keys, converter, params) => {
+var keyFacsimile = (keys, converter) => {
     var result = {};
     Object.keys(keys).forEach((key) => result[key] = converter(key));
     return result;
