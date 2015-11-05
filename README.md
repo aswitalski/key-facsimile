@@ -1,6 +1,8 @@
 # key-facsimile
 A key-value mirror supporting prefixing, uppercase with underscore and lowercase with dash name convension.
 
+[![Build Status](https://snap-ci.com/aswitalski/key-facsimile/branch/master/build_image)](https://snap-ci.com/aswitalski/key-facsimile/branch/master)
+
 ## Examples
 
 #### Key mirror:
