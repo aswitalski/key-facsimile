@@ -8,7 +8,10 @@ A key-value mirror supporting prefixing, uppercase with underscore and lowercase
 #### Key mirror:
 
 ``` js
-var keyMirror = require('key-facsimile');
+
+import { keyMirror } from 'key-facsimile'
+// or
+//   var keyMirror = require('key-facsimile');
 
 const Consts = keyMirror({
     MOBILE: null,
@@ -23,7 +26,7 @@ console.log(Consts);
 #### Key prefix:
 
 ``` js
-var keyPrefix = require('key-facsimile').prefix('MODE-');
+let keyPrefix = require('key-facsimile').prefix('MODE-');
 
 const Consts = keyPrefix({
     MOBILE: null,
@@ -38,7 +41,9 @@ console.log(Consts);
 #### Key lowercase conversion (with dashes):
 
 ``` js
-var keyLowercase = require('key-facsimile').lowercase;
+import { keyLowercase } from 'key-facsimile'
+// or
+//   var keyLowercase = require('key-facsimile').lowercase;
 
 const Classes = keyLowercase({
     PRIMARY: null,
@@ -53,7 +58,9 @@ console.log(Classes);
 #### Key uppercase conversion (with underscores):
 
 ``` js
-var keyUppercase = require('key-facsimile').uppercase;
+import { keyUppercase } from 'key-facsimile'
+// or
+//   var keyUppercase = require('key-facsimile').uppercase;
 
 const OS = keyMirror({
     'mac-os-x': null
