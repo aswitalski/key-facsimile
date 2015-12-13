@@ -23,21 +23,6 @@ console.log(Consts);
 // prints { MOBILE: 'MOBILE', TABLET: 'TABLET', DESKTOP: 'DESKTOP' };
 ```
 
-#### Key prefix:
-
-``` js
-let keyPrefix = require('key-facsimile').prefix('MODE-');
-
-const Consts = keyPrefix({
-    MOBILE: null,
-    TABLET: null,
-    DESKTOP: null
-});
-
-console.log(Consts);
-// prints { MOBILE: 'MODE-MOBILE', TABLET: 'MODE-TABLET', DESKTOP: 'MODE-DESKTOP' };
-```
-
 #### Key lowercase conversion (with dashes):
 
 ``` js
@@ -70,4 +55,19 @@ const OS = keyMirror({
 
 console.log(OS);
 // prints { mac-os-x: 'MAC_OS_X', linux: 'LINUX', windows: 'WINDOWS' };
+```
+
+#### Key prefix:
+
+``` js
+let keyPrefix = require('key-facsimile').prefix('MODE-');
+
+const Consts = keyPrefix({
+    MOBILE: null,
+    TABLET: null,
+    DESKTOP: null
+});
+
+console.log(Consts);
+// prints { MOBILE: 'MODE-MOBILE', TABLET: 'MODE-TABLET', DESKTOP: 'MODE-DESKTOP' };
 ```
