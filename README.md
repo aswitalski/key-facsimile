@@ -47,7 +47,7 @@ import { keyUppercase } from 'key-facsimile'
 // or
 //   var keyUppercase = require('key-facsimile').uppercase;
 
-const OS = keyMirror({
+const OS = keyUppercase({
     'mac-os-x': null
     linux: null,
     windows: null,
