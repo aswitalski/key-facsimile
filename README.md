@@ -5,7 +5,7 @@ A key-value mirror supporting prefixing, uppercase with underscore and lowercase
 
 ## Examples
 
-#### Key mirror:
+#### Key mirror
 
 ``` js
 
@@ -20,10 +20,10 @@ const Consts = keyMirror({
 });
 
 console.log(Consts);
-// prints { MOBILE: 'MOBILE', TABLET: 'TABLET', DESKTOP: 'DESKTOP' };
+// prints { MOBILE: 'MOBILE', TABLET: 'TABLET', DESKTOP: 'DESKTOP' }
 ```
 
-#### Key lowercase conversion (with dashes):
+#### Key lowercase conversion (with dashes)
 
 ``` js
 import { keyLowercase } from 'key-facsimile'
@@ -37,10 +37,10 @@ const Classes = keyLowercase({
 });
 
 console.log(Classes);
-// prints { PRIMARY: 'primary', DISABLED: 'disabled', HAS_FOCUS: 'has-focus' };
+// prints { PRIMARY: 'primary', DISABLED: 'disabled', HAS_FOCUS: 'has-focus' }
 ```
 
-#### Key uppercase conversion (with underscores):
+#### Key uppercase conversion (with underscores)
 
 ``` js
 import { keyUppercase } from 'key-facsimile'
@@ -48,16 +48,16 @@ import { keyUppercase } from 'key-facsimile'
 //   var keyUppercase = require('key-facsimile').uppercase;
 
 const OS = keyUppercase({
-    'mac-os-x': null
+    'mac-os-x': null,
     linux: null,
     windows: null,
 });
 
 console.log(OS);
-// prints { mac-os-x: 'MAC_OS_X', linux: 'LINUX', windows: 'WINDOWS' };
+// prints { 'mac-os-x': 'MAC_OS_X', linux: 'LINUX', windows: 'WINDOWS' }
 ```
 
-#### Key prefix:
+#### Key prefix
 
 ``` js
 let keyPrefix = require('key-facsimile').prefix('MODE-');
@@ -69,5 +69,5 @@ const Consts = keyPrefix({
 });
 
 console.log(Consts);
-// prints { MOBILE: 'MODE-MOBILE', TABLET: 'MODE-TABLET', DESKTOP: 'MODE-DESKTOP' };
+// prints { MOBILE: 'MODE-MOBILE', TABLET: 'MODE-TABLET', DESKTOP: 'MODE-DESKTOP' }
 ```
