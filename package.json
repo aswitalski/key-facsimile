@@ -38,6 +38,6 @@
     "babel-register": "^6.3.13",
     "mocha": "^2.3.3",
     "pre-commit": "^1.1.2",
-    "readme-to-test": "0.1.0"
+    "readme-to-test": "0.2.0"
   }
 }
